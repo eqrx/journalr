@@ -1,5 +1,8 @@
 module eqrx.net/journalr
 
-go 1.18
+go 1.19
 
-require github.com/go-logr/logr v1.2.3
+require (
+	github.com/go-logr/logr v1.2.3
+	github.com/magefile/mage v1.13.0
+)
