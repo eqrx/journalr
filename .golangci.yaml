@@ -6,8 +6,8 @@ linters:
     - bidichk
     - bodyclose
     - containedctx
+    - contextcheck
     - cyclop
-    - deadcode
     - decorder
     - depguard
     - dogsled
@@ -23,6 +23,7 @@ linters:
     - forbidigo
     - funlen
     - gci
+    - goerr113
     - gochecknoglobals
     - gochecknoinits
     - gocognit
@@ -44,8 +45,10 @@ linters:
     - govet
     - grouper
     - importas
+    - interfacebloat
     - ineffassign
-    - lll
+    # - ireturn # Not useful for logr API.
+    - logrlint
     - maintidx
     - makezero
     - misspell
@@ -57,7 +60,6 @@ linters:
     - noctx
     - nolintlint
     - nonamedreturns
-    - nosnakecase
     - nosprintfhostport
     - paralleltest
     - prealloc
@@ -76,7 +78,6 @@ linters:
     - unparam
     - unused
     - usestdlibvars
-    - varcheck
     - varnamelen
     - whitespace
     - wrapcheck
